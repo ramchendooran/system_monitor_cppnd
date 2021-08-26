@@ -1,6 +1,6 @@
 #include "processor.h"
 #include <iostream>
-// TODO: Return the aggregate CPU utilization
+//  Return the aggregate CPU utilization
 float Processor::Utilization() { 
     
     string cpu, idle, iowait, user, nice, system, irq, softirq, steal;
@@ -37,5 +37,4 @@ float Processor::Utilization() {
     steal_ = stof(steal);
 
     return CPU_Percentage;
-    std::cout << CPU_Percentage;
 }
