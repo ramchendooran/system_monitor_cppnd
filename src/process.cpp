@@ -31,7 +31,7 @@ float Process::CpuUtilization() { return cpuUtil_; }
 string Process::Command() { return command_; }
 
 //  Return this process's memory utilization
-string Process::Ram() { return ram_; }
+string Process::Ram() { return (std::to_string(stol(ram_)/1000)); }
 
 //  Return the user (name) that generated this process
 string Process::User() { return user_; }
